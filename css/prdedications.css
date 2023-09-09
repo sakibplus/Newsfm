@@ -1,0 +1,140 @@
+.prdedications--mask { position: fixed; width: 100vw; height: 100vh; z-index: 99990; display: block; top: 0; left: 0; background-color: #ffffff; opacity: 0.7; }
+
+.prdedications--modal { position: fixed; width: 900px; z-index: 99999; display: block; top: 0; left: 0; background-color: #f7f7f7; left: 50%; transform: translatex(-50%) translatey(-50%); top: 50%; border-radius: 20px; overflow: hidden; box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.45); }
+
+.prdedications-masonry_container { display: flex; width: 100%; flex-grow: 1; }
+
+.prdedications--modal__col { width: 50%; float: left; padding: 70px 40px; flex-grow: 1; position: relative; }
+
+.prdedications--modal__col--form { padding: 10px 15px; }
+
+.prdedications--modal__col--contacts { background: #234c4e; color: #fff; padding: 20px; }
+
+.prdedications--modal__col--contacts h3 { color: #fff !important; margin: 30px 0 20px 0; }
+
+.prdedications--modal__iconslist p { line-height: 2em; margin-bottom: 5px; }
+
+.prdedications--modal__iconslist p a { color: #fff; }
+
+.prdedications--modal__iconslist i { margin-right: 10px; color: #fff !important; font-size: 20px; display: inline-flex; vertical-align: middle; }
+
+.prdedications--modal__iconslist i.qt-socicon-whatsapp { font-size: 23px; }
+
+@media (min-width: 1200px) { .prdedications--modal__iconslist { position: absolute; bottom: 0; padding-bottom: 30px; } }
+
+.prdedications-close { position: absolute; top: 3px; right: 3px; width: 30px; height: 30px; line-height: 30px; color: #fff; background-color: transparent; border-radius: 50%; text-align: center; display: block; z-index: 10; }
+
+.prdedications-close i { color: #ffffff !important; width: 30px; height: 30px; line-height: 30px; }
+
+@media (max-width: 1119px) { .prdedications--modal { width: 90vw; } }
+
+@media (max-width: 700px) { .prdedications--modal { width: 96vw; } .prdedications-masonry_container { flex-direction: column-reverse; } .prdedications--modal__col { width: 100%; max-width: 86vw; margin: 0 auto; } .prdedications--modal .prdedications-cform-form { max-width: 300px; } }
+
+.prdedications--mask, .prdedications--modal { display: none; }
+
+@media (min-width: 1000px) { .prdedications--modal__col--form { padding: 30px 40px; } .prdedications--modal__col--contacts { padding: 40px; } .prdedications--modal__col--contacts h3 { margin: 0 0 80px 0; } .prdedications--modal { border-radius: 40px; } .prdedications-close { position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; line-height: 40px; color: #fff; background-color: #fff; border-radius: 50%; text-align: center; display: block; z-index: 10; } .prdedications-close i { color: #234c4e !important; width: 40px; height: 40px; line-height: 40px; } }
+
+.prdedications--box { border: 1px dotted #dddddd; border-width: 1px 0 1px 0; padding: 40px; margin: 70px 0; }
+
+.prdedications--box__title { font-size: 28px; display: inline-block; margin: 0; }
+
+.prdedications__btn { color: #fff !important; background: #67bcc1; font-weight: bold; padding: 20px 30px; border-radius: 50px; font-size: 16px; text-transform: uppercase; float: right; }
+
+.prdedications .prdedications--box__what i { color: #fff; font-size: 28px; line-height: 60px; display: inline-flex; vertical-align: middle; }
+
+.prdedications .prdedications--box__what { padding: 0 0px; width: 60px; text-align: center; height: 61px; line-height: 61px; margin-left: 10px; }
+
+@media (max-width: 600px) { .prdedications--box { padding: 40px 0; text-align: center; } .prdedications--box__title { display: block; clear: both; text-align: center; font-size: 26px; } .prdedications__btn { clear: both; margin: o auto; float: none; display: inline-block; margin-top: 30px; text-align: center; } }
+
+#proradio-body .prdedications-container form label { opacity: 1; }
+
+.prdedications-emojibtn { position: absolute; top: 20px; right: 6px; z-index: 2; }
+
+.prdedications-emojilist { padding: 7px; border-radius: 5px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); position: absolute; right: 0; z-index: 100; background: #fff; display: none; }
+
+.prdedications .prdedications-error-message { font-size: 12px; color: #f60; font-weight: bold; margin: 4px 0 0 0; display: none; }
+
+.prdedications .prdedications-error-message.show { display: block; }
+
+.prdedications .prdedications-response-success, .prdedications .prdedications-response-error, .prdedications .prdedications-response-limit { opacity: 0; color: #fff; padding: 0; background: #09cb55; font-size: 16px; border-radius: 10px; max-height: 0px; overflow: hidden; transition: max-height 0.3s ease; width: 100%; margin: 0; }
+
+.prdedications .prdedications-response-success.show, .prdedications .prdedications-response-error.show, .prdedications .prdedications-response-limit.show { opacity: 1; max-height: 120px; padding: 10px; margin-bottom: 30px; }
+
+.prdedications .prdedications-response-error, .prdedications .prdedications-response-limit { background-color: #f60; }
+
+.prdedications .prdedications-submitrow { margin-bottom: 0; overflow: hidden; }
+
+.prdedications .prdedications-submitrow::after { content: " "; width: 100%; clear: both; display: block; height: 1px; }
+
+.prdedications .prdedications-submitrow button { float: left; font-size: 15px; }
+
+.prdedications .prdedications-submitrow button i { font-size: 18px; margin-right: 5px; }
+
+.proradio-dedications-message-container { position: relative; z-index: 100; }
+
+.prdedications-cform-form { position: relative; }
+
+.prdedications-song-search { padding-bottom: 30px; position: relative; z-index: 10; }
+
+.prdedications-song-search input { margin-right: 10px; }
+
+.prdedications-song-search .prdedications-cform-form-control-wrap { display: flex; flex-grow: 1; position: relative; }
+
+.prdedications-song-search .prdedications-cform-form-control-wrap .proradio-btn { position: absolute; right: 0; font-size: 20px; z-index: 2; padding: 0; border: none; }
+
+.prdedications-suggestions { max-height: 200px; overflow: auto; }
+
+.prdedications-suggestions ul { margin: 0 !important; padding: 0; background-color: var(--proradio-colors-paper); }
+
+.prdedications-suggestions ul li { margin: 0; padding: 0; list-style: none; padding: 5px; border-bottom: 1px solid rgba(100, 100, 100, 0.2); }
+
+.prdedications-suggestions ul li:hover { background: rgba(100, 100, 100, 0.1); }
+
+.prdedications-suggestions ul li a { color: inherit; color: var(--proradio-colors-ink); display: flex; font-size: 13px; }
+
+.prdedications-suggestions ul li img { width: 40px; height: 40px; margin-right: 20px; border-radius: 3px; overflow: hidden; }
+
+@media (min-width: 760px) { #proradio-body .proradio-master .prdedications-cform-form input[type="text"], #proradio-body .proradio-master .prdedications-cform-form input[type="email"], #proradio-body .proradio-master .prdedications-cform-form input[type="password"], #proradio-body .proradio-master .prdedications-cform-form input[type="tel"], #proradio-body .proradio-master .prdedications-cform-form input[type="number"], #proradio-body .proradio-master .prdedications-cform-form input[type="url"], #proradio-body .proradio-master .prdedications-cform-form input[type="tel"], #proradio-body .proradio-master .prdedications-cform-form textarea { font-size: 22px; } }
+
+.prdedications-searchbutton { background: blue; text: #fff; }
+
+.prdedications-spinner { height: 45px; width: 45px; position: relative; margin: 0 0 0 10px; -webkit-animation: qtrotation 1s infinite linear; animation: qtrotation 1s infinite linear; border: 6px solid rgba(150, 150, 150, 0.5); border-radius: 100%; position: relative; float: right; display: none; box-sizing: content-box; float: left; }
+
+.prdedications-spinner::before { content: " "; display: block; position: absolute; left: -6px; top: -6px; height: 100%; width: 100%; border-top: 6px solid rgba(200, 200, 200, 0.9); border-left: 6px solid transparent; border-bottom: 6px solid transparent; border-right: 6px solid transparent; border-radius: 100%; box-sizing: content-box !important; }
+
+@-webkit-keyframes qtrotation { from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(359deg); } }
+
+@keyframes qtrotation { from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); } }
+
+.prdedications-fighter { position: fixed; top: 0; left: 20000px; left: 200vw; z-index: -1; }
+
+.proradio-dedications-scroller { white-space: nowrap; overflow: hidden; margin-right: 20px; max-width: 100%; display: flex; position: relative; width: 100%; }
+
+.proradio-dedications-scroller__label { padding: 0 0.6em; z-index: 2; border-radius: 2px; margin-right: 20px; background-color: var(--proradio-colors-accent); color: var(--proradio-colors-accent-text); position: absolute; }
+
+.proradio-dedications-scroller__label::after { position: absolute; content: ' '; background-color: var(--proradio-colors-accent); transform: rotate(45deg); transform: rotate(45deg) translateY(38%); right: -0.6em; z-index: -1; width: 1em; height: 1em; font-size: inherit; }
+
+.proradio-dedications-scroller a.proradio-dedication-thumb { width: 1em; height: 1em; border-radius: 50%; overflow: hidden; display: inline-flex; margin-right: 20px; vertical-align: middle; }
+
+.proradio-dedications-scroller img { width: 1em; height: 1em; border-radius: 50%; display: inline-flex; margin-right: 20px; vertical-align: middle; }
+
+.proradio-dedications-scroller .proradio-marquee { z-index: 1; }
+
+.proradio-dedications-scroller span, .proradio-dedications-scroller a { font-size: 14px; }
+
+.proradio-dedication-name { border-radius: 2px; padding: 0 7px 0 7px; margin-right: 20px; text-transform: uppercase; background: var(--proradio-colors-primary-light); color: var(--proradio-colors-primary-text); }
+
+.proradio-dedication-text { margin-right: 80px; opacity: 0.7; }
+
+.proradio-dedication-song { margin-right: 10px; color: var(--proradio-colors-accent); }
+
+.proradio-dedications-list ul { margin: 0 !important; padding: 0; }
+
+.proradio-dedications-list ul li { margin: 0 0 30px 0; padding: 0; list-style: none; }
+
+.proradio-dedications-list ul li img { width: 1.2em; height: 1.2em; border-radius: 50%; display: inline-flex; vertical-align: middle; margin-right: 20px; }
+
+.proradio-dedications-list ul li:last-child { margin-bottom: 0; }
+/*# sourceMappingURL=prdedications.css.map */
